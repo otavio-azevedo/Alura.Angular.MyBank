@@ -1,1 +1,3 @@
-<app-new-transfer></app-new-transfer>
+<app-new-transfer (onTransfer)="transfer($event)"></app-new-transfer>
+
+<app-resume [transferences]="transferences"></app-resume>

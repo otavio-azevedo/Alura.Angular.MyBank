@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/alura.angular.bytebank'),
+      dir: require('path').join(__dirname, './coverage/alura.angular.mybank'),
       subdir: '.',
       reporters: [
         { type: 'html' },
