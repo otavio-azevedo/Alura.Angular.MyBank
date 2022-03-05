@@ -26,11 +26,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## Fundamental Concepts
-    https://angular.io/guide/two-way-binding
 
-    http://getbem.com/
-    https://www.alura.com.br/artigos/criando-componentes-css-com-padrao-bem
+## Fundamental References
 
-    Angular Commands Used:
-      ng generate component COMPONENT_NAME
+- ### Angular
+  - https://angular.io/guide/two-way-binding
+  - https://angular.io/api/common/http/HttpClient
+  - https://angular.io/api/router/RouterModule
+  - https://angular.io/api/router/RouterOutlet
+
+- ### CSS
+   - http://getbem.com/
+   - https://www.alura.com.br/artigos/criando-componentes-css-com-padrao-bem
+
+- ### Mock API with Json-Server
+   - https://github.com/typicode/json-server
+     - ***Get a full fake REST API with zero coding in less than 30 seconds (seriously)***
+    

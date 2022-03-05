@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Transference } from '../models/transference.model';
+import { TransferService } from '../services/transfer.service';
 
 @Component({
   selector: 'app-resume',
@@ -6,11 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
-  @Input() transferences: any[] = [];
+  transferences: any[] = [];
 
-  constructor() { }
+  constructor(private service: TransferService) { }
 
   ngOnInit(): void {
+    this.service.getAllTransferences().subscribe((transferences: Transference[]) => {
+      console.table(transferences);
+      this.transferences = transferences;
+    });
   }
 
 }
